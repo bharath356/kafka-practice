@@ -1,6 +1,5 @@
 package com.example.kafkapractice.controllers
 
-import com.example.kafkapractice.domain.StockPrice
 import com.example.kafkapractice.service.StockPriceService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
@@ -13,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController
 class StockPriceController(@Autowired val stockPriceService: StockPriceService) {
 
     @GetMapping
-    fun getStockPrices(): List<StockPrice> {
-        return stockPriceService.selectAllStockPrice()
+    fun startProcess(){
+        return stockPriceService.startProcess()
     }
 }

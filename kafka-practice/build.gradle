@@ -43,6 +43,12 @@ dependencies {
     implementation 'org.flywaydb:flyway-core'
     runtimeOnly 'org.postgresql:postgresql'
 
+    implementation "org.apache.kafka:kafka-clients:2.5.0"
+
+    implementation 'com.opencsv:opencsv:5.1'
+    implementation 'com.google.guava:guava:27.0.1-jre'
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.4"
+
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation 'io.kotlintest:kotlintest-runner-junit5:3.4.2'
 }
